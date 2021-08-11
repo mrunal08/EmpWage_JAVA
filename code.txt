@@ -6,6 +6,11 @@ public class Main {
     public static void main(String[] args){
         System.out.println("Welcome to Employee Wage Computation Program");
      
- 
+    //Employee Daily Part time Wage
+        int partTimeHour=4;
+        int partTimeWage= partTimeHour*20;
+        System.out.println("Employee Daily Part Time Wage is "+partTimeWage);
+
+
 }
 
