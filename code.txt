@@ -6,6 +6,9 @@ public class Main {
     public static void main(String[] args){
         System.out.println("Welcome to Employee Wage Computation Program");
      
+  int totalHour=8;
+        int wage= totalHour*20;
+        System.out.println("Employee Daily Wage is "+wage);
       
     }
 }
