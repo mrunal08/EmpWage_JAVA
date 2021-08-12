@@ -8,28 +8,27 @@ public class Main {
         int fullHour=8;
         int partTimeHour=4;
         int wage= fullHour*20;
-        int totalHour;
+      int totalHour=8;
         String work;
-        int rand=(int)(Math.floor(Math.random()*10)%2);
 
-        switch(rand){
-            case 0:
-                totalHour = 8;
-                wage = totalHour*20;
-                work = "FullTime";
-                break;
-            case 1 :
-                totalHour = 4;
-                wage = partTimeHour*20;
-                work ="HalfTime";
-                break;
-            default: totalHour = 0;
-                wage=0;
-                work ="Absent";
-                break;
+        int monthWage;
+        int WORKDAYS=20;
+        int totalMonthWage=0;
+        int totalMonthHours;
+        double hour=0;
+        double tHour=(Math.floor(Math.random()*10)%2);
+        hour=hour+totalHour;
+
+        if(hour==8){
+            totalMonthHours=WORKDAYS*8;
+            totalMonthWage=totalMonthHours*20;
         }
-        System.out.println("UC4->Employee Wage for "+work +" is "+wage);
+        else if(hour == 4){
+            totalMonthHours=WORKDAYS*4;
+            totalMonthWage=totalMonthHours*20;
+        }
 
+        System.out.println("UC5->Total Montly wage of Employee is: "+ totalMonthWage);
 
     }
 }
