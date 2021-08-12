@@ -5,11 +5,32 @@ public class Main {
     //main method
     public static void main(String[] args){
         System.out.println("Welcome to Employee Wage Computation Program");
-     
-  int totalHour=8;
-        int wage= totalHour*20;
-        System.out.println("Employee Daily Wage is "+wage);
-      
+        int fullHour=8;
+        int partTimeHour=4;
+        int wage= fullHour*20;
+        int totalHour;
+        String work;
+        int rand=(int)(Math.floor(Math.random()*10)%2);
+
+        switch(rand){
+            case 0:
+                totalHour = 8;
+                wage = totalHour*20;
+                work = "FullTime";
+                break;
+            case 1 :
+                totalHour = 4;
+                wage = partTimeHour*20;
+                work ="HalfTime";
+                break;
+            default: totalHour = 0;
+                wage=0;
+                work ="Absent";
+                break;
+        }
+        System.out.println("UC4->Employee Wage for "+work +" is "+wage);
+
+
     }
 }
 
